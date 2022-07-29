@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400&family=Uchen&display=swap');
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Uchen', serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+h1 {
+    /* text-decoration: underline red; */
+    color: burlywood;
+    font-weight: bold;
+    text-decoration: underline red;
+
+}
+
+p {
+    padding: 5px;
+    text-decoration: solid;
+    text-decoration: underline dashed red;
+
+
+}
+/* #myplace{
+     font-size: 20px;
+     border-radius: 20px;
+     
+
+} */
+
+
+
+
+h3{
+    padding: 5px;
+    font-style: italic;
+    text-decoration: underline overline dashed red;
+}
+ul{
+    text-decoration: underline dashed red;
+
+} */
