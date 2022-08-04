@@ -1,110 +1,234 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400&family=Uchen&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.tilte1 {
-  text-decoration: underline rgb(130, 50, 205);
-  text-align: center;
-  color: rgb(28, 229, 229);
-  font-size: 50px;
-}
-
 body {
   background: url("https://thumbs.dreamstime.com/b/gare-li%C3%A8ge-guillemins-la-nuit-28329301.jpg")
     no-repeat;
 }
+:root {
+  --main-clr: #0099bb;
+  --text-clr: #485c6b;
+  --bg-clr: #e5e5e5;
+  --font-default: "Roboto", sans-serif;
+  font-family: var(--font-default);
+}
+
 .container {
-  width: 700px;
-  margin: 10% auto;
-  background-color: rgba(235, 237, 239, 0.3);
-  border-radius: 10px;
-  padding: 30px;
-  overflow: hidden;
+  width: 900px;
+  margin: 5% auto;
+  background-color: rgb(44, 36, 36, 0.3);
+  padding: 0px;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.testPos {
+  position: sticky;
+  top: 0px;
+  background: #ccc;
 }
 
-.input {
+.first__title {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-clr);
+}
+
+.seconde__title {
+  text-transform: capitalize;
+  border-bottom: 2px dotted var(--main-clr);
+  width: max-content;
+  margin-bottom: 15px;
+  color: var(--text-clr);
+  margin: 12px 0 12px 4%;
+  font-size: 1.1rem;
+}
+
+form {
   display: flex;
-  justify-content: space-between;
-}
-#myplace {
-  width: 400px;
+  justify-content: space-evenly;
   padding: 10px;
-  margin-bottom: 10px;
-  cursor: default;
-  border-radius: 200px;
-  outline: none;
-  border: 1px solid black;
-  color: chocolate;
-  font-family: cursive;
-  font-size: 1em;
+  margin-bottom: 15px;
 }
 
-.mylist {
+.task__input {
+  width: 430px;
+  padding: 12px;
+  border: none;
+  border-radius: 200px;
+}
+
+.btn__main {
+  width: 100px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn__add--update {
+  background-color: var(--main-clr);
+  color: var(--bg-clr);
+}
+
+.btn__clear--update {
+  background-color: #d92525cc;
+  color: var(--bg-clr);
+}
+
+.display__title {
+  border-top: 2px solid var(--main-clr);
+  width: max-content;
+  padding: 5px 0;
+  text-transform: capitalize;
+  margin: 12px 0 0 8%;
+  font-size: 1.2rem;
+  color: var(--text-clr);
+}
+
+.textTask {
+  display: flex;
+}
+
+.row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
-  color: yellow;
-}
-#btnAdd {
-  color: black;
-  background: rgb(146, 146, 28, 0.3);
-  cursor: pointer;
-  border-radius: 100px;
-  max-width: 200%;
-  min-width: 20%;
-  font-family: fantasy;
-  border-color: rgb(232, 187, 211);
-  border: 1px solid black;
-}
-.title {
-  margin-top: 10px;
+  margin-top: 5%;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(31, 26, 26, 0.3);
   padding: 10px;
-  text-decoration: underline overline dashed rgb(135, 50, 205);
-  font-size: 30px;
-  font-family: fantasy;
-  color: red;
-}
-.paragraph {
-  margin-top: 10px;
-  padding: 20px;
-  text-decoration: underline dashed rgb(135, 50, 205);
-  font-size: 30px;
-  font-family: fantasy;
-  color: cyan;
-  color: red;
-}
-#btndone {
-  border-radius: 200px;
-  max-width: 200%;
-  min-width: 40%;
-  padding: 10px;
-  cursor: pointer;
-  background: rgb(233, 233, 183);
-  font-family: fantasy;
-  border-color: rgb(244, 174, 211);
-  border: 1px solid black;
-}
-#btndel {
-  border-radius: 500px;
-  max-width: 100%;
-  min-width: 40%;
-  padding: 10px;
-  cursor: pointer;
-  background: rgb(236, 167, 167);
-  font-family: fantasy;
-  border-color: rgb(240, 177, 211);
-  border: 1px solid black;
+  border-radius: 10px;
 }
 
-#btnAdd:hover,
-#btndel:hover,
-#btndone:hover {
-  background-color: blueviolet;
+.btn {
+  width: 100px;
+  padding: 9px;
+  border-radius: 100px;
+  border: 1px solid var(--main-clr);
+  text-transform: capitalize;
+  color: var(--text-clr);
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
 }
-input[type="checkbox"] {
-  background: blue;
+
+.btn__done {
+  background-color: var(--main-clr);
+  margin-right: 5px;
+  color: var(--bg-clr);
+}
+
+.btn__delete {
+  background-color: #d92525cc;
+  border: none;
+  color: var(--bg-clr);
+}
+
+.nametask {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: var(--text-clr);
+  margin-left: 3px;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-clr);
+  margin-top: -2px;
+}
+
+.error {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-top: 2%;
+  color: var(--main-clr);
+}
+
+.undo {
+  background-color: var(--bg-clr);
+  margin-right: 5px;
+  border: 2px solid var(--main-clr);
+  color: var(--text-clr);
+}
+
+.thro {
+  position: relative;
+}
+
+.thro::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  width: 48px;
+  height: 3px;
+  background-color: var(--text-clr);
+  animation: move 0.5s;
+  opacity: 1;
+}
+
+@keyframes move {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    left: -1px;
+    opacity: 0;
+    top: -2px;
+  }
+}
+
+@media (max-width: 676px) {
+  .container {
+    width: 93%;
+  }
+
+  .first__title {
+    margin-bottom: 6%;
+  }
+
+  .seconde__title {
+    font-size: 13px;
+    margin: 3px 16px;
+  }
+
+  .display__title {
+    font-size: 16px;
+    margin: 0 0 0 16px;
+  }
+
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .task__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn__add {
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  .first__title {
+    margin-bottom: 0;
+  }
+
+  .display__title {
+    margin: 0 0 0 4%;
+  }
 }

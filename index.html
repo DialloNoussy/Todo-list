@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="Aut" content="Diallo Noussy" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Projet to do liste</title>
-  </head>
-
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
     <div class="container">
-      <h1 class="tilte1">MY TO DO LISTE</h1>
-      <p class="paragraph">Add your Task</p>
-      <div class="input">
-        <input
-          type="text"
-          id="myplace"
-          placeholder="Ecrivez votre tâche (max 40 chars)"
-          maxlength="40"
-        />
-        <button id="btnAdd">add</button>
-      </div>
-      <h2 class="title">HAS TO BE DONNE</h2>
-      <div class="rowtasks"></div>
-      <div class="mylist">
-        <!-- <h2>Eat</h2>
-        <div class="bnts">
-          <button id="btndone">Done✅</button>
-          <button id="btndel">Delete❌</button>
-        </div> -->
-      </div>
+        <div class="testPos">
+          <h2 class="first__title">📝 to do list</h2>
+        <h2 class="seconde__title">add your task</h2>
+        <form>
+            <input type="text" placeholder=" Your Task" class="task__input">
+            <button type="submit" class="btn__main btn__add--update btn__add">➕Add</button>
+            <button type="submit" class="btn__main btn__clear--update btn__clear">Clear</button>
+        </form>
+        <h2 class="display__title">has to be done</h2>
+        <span class="line"></span>
+        </div>
+        <div class="display">
+            <span class="error">not data</span>
+        </div>
     </div>
-  </body>
-  <script src="./script.js"></script>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="css_normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex_c">
+        <h1 class="head">
+          ToDo List<i class="fas fa-clipboard-list headIcon"></i>
+        </h1>
+        <input type="text" id="input" placeholder="enter your task" />
+        <p id="emptyInput"></p>
+        <button id="submit" onclick="addItem()">add task</button>
+        <div id="result"></div>
+        <button id="rmvbtn">
+          delete selected<i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./testing.js"></script>
+  </body>
+</html>
