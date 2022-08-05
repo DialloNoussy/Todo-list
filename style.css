@@ -132,7 +132,7 @@ form {
 .nametask {
   text-transform: capitalize;
   font-size: 1rem;
-  color: var(--text-clr);
+  color: yellowgreen;
   margin-left: 3px;
 }
 
